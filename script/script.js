@@ -68,9 +68,18 @@ function createRandomCircle() {
   circle.style.height = `${size}px`;
   circle.style.top = `${y}px`;
   circle.style.left = `${x}px`;
+  circle.style.background = randomCircleColor();
   board.append(circle);
 }
 
 function randomCircleSize(min, max) {
   return Math.round(Math.random() * (max - min) + min);
+}
+
+function randomCircleColor() {
+  let r = Math.floor(Math.random() * (255 - 50) + 50);
+  let g = Math.floor(Math.random() * (255 - 50) + 50);
+  let b = Math.floor(Math.random() * (255 - 50) + 50);
+  const color = `#` + r.toString(16) + g.toString(16) + b.toString(16);
+  return color;
 }
