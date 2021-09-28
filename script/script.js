@@ -40,7 +40,6 @@ function changeTime() {
 board.addEventListener("click", (event) => {
   if (event.target.classList.contains("circle")) {
     score++;
-    console.log(score);
     event.target.remove();
     createRandomCircle();
   }
