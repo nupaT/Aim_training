@@ -68,7 +68,7 @@ function createRandomCircle() {
   circle.style.height = `${size}px`;
   circle.style.top = `${y}px`;
   circle.style.left = `${x}px`;
-  circle.style.background = randomCircleColor();
+  circle.style.background = `radial-gradient(${randomCircleColor()}, ${randomCircleColor()})`;
   board.append(circle);
 }
 
