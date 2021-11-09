@@ -1,9 +1,9 @@
 const startBtn = document.querySelector("#start");
 const screens = document.querySelectorAll(".screen");
 const timeList = document.querySelector("#time-List");
-let time = 0;
 const timeEnd = document.querySelector("#time");
 const board = document.querySelector("#board");
+let time = 0;
 let score = 0;
 
 startBtn.addEventListener("click", (event) => {

@@ -129,6 +129,10 @@ h1 {
   background: linear-gradient(90deg, #29323c 0%, #485563 100%);
 }
 
+.screen h3 {
+  margin: 0 0 20px 0;
+}
+
 .screen.up {
   margin-top: -100vh;
 }
